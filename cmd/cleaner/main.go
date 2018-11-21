@@ -1,12 +1,12 @@
-package main
+package main // import "github.com/ypeckstadt/couchdb-cleaner"
 
 import (
-	"blockchain-indetail/nebula-paas/couchdb-cleaner/cmd/cleaner/environment"
-	"blockchain-indetail/nebula-paas/couchdb-cleaner/cmd/cleaner/model"
 	"encoding/json"
 	"fmt"
 	"github.com/Netflix/go-env"
 	"github.com/pkg/errors"
+	"github.com/ypeckstadt/couchdb-cleaner/environment"
+	"github.com/ypeckstadt/couchdb-cleaner/model"
 	"io/ioutil"
 	"log"
 	"net/http"
