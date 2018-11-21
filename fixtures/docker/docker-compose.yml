@@ -1,0 +1,19 @@
+version: '3.6'
+
+networks:
+  fixtures_default:
+
+services:
+  couchdb-cleaner:
+    container_name: couchdb-cleaner
+    image: couchdb-cleaner
+    environment:
+      COUCHDB_CLEANER_URLS: http://127.0.0.1:5984
+      COUCHDB_CLEANER_DB: mydb
+      COUCHDB_CLEANER_COMPACT_INTERVAL_MS: 5000
+    networks:
+      - fixtures_default
+
+
+
+
